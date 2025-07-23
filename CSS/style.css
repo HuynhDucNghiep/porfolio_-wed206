@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(211, 208, 208) ;
+    font-family: Inter;
+    font-style: normal;
+    display: flex;
+    
+    
+}
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+/* thanh side-bar */
+.aside
+{
+    width: 305px;
+    height: 1315px;
+    background-color: white ;
+    flex-direction: column;
+    text-align: center;
+    flex-shrink: 0;
+    gap: 25px;
+}
+.middle
+{
+  text-align: center;
+  
+}
+.ten
+{
+    color: var(--Black, #2B2B2B);
+    /* H4 - 18px */
+    font-size: 18px;
+    line-height: 30px; /* 22.248px */
+    text-transform: capitalize;
+    text-align: center;
+}
+.icon 
+{
+    margin: 15px 43px 0px 43px ;
+    flex-shrink: 0;
+    flex-direction: row;
+    display: flex;
+    gap: 15px ;
+}
+.Profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.person-info{
+    background-color: #FFB400;
+    height: 30px;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+.languages
+{
+   
+    font-size: 18px;
+    font-weight: 500;
+    justify-items: left;
+    margin: 25px 43px;
+}
+.languages-font
+{
+    width: 220px;
+    height: 4px;
+    flex-shrink: 0;
+}
+/* khung chinh */
+.main
+{
+    background-color: rgb(255, 255, 255);
+    width: 970px;
+    height: auto;
+    margin-left: 25px;
+    align-items: center;
+    flex-shrink: 0;
+}
+/* thanh nav */
+.nav
+{
+    background-color: rgb(255, 250, 250);
+    width: 108px;
+    height: 1315px;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
