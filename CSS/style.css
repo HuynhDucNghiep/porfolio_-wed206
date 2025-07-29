@@ -3,19 +3,22 @@
     margin: 0;
     padding: 0;
 }
+svg, p {
+    margin: 0;
+    padding: 0;
+}
+svg {
+    margin-bottom: 2px; /* hoặc 4px nếu muốn thoáng */
+}
 body
 {
-    background-color: rgb(211, 208, 208) ;
+    background-color: rgb(234, 231, 231) ;
     font-family: Inter;
     font-style: normal;
     display: flex;
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
     
-    
-}
-
-.font-inter {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
 }
 /* thanh side-bar */
 .aside
@@ -26,12 +29,10 @@ body
     flex-direction: column;
     text-align: center;
     flex-shrink: 0;
-    gap: 25px;
 }
 .middle
 {
   text-align: center;
-  
 }
 .ten
 {
@@ -64,11 +65,11 @@ body
 }
 .languages
 {
-   
     font-size: 18px;
     font-weight: 500;
     justify-items: left;
-    margin: 25px 43px;
+    margin-left: 43px ;
+    margin-right: 43px ;
 }
 .languages-font
 {
@@ -76,15 +77,108 @@ body
     height: 4px;
     flex-shrink: 0;
 }
-/* khung chinh */
-.main
+.container-label
 {
-    background-color: rgb(255, 255, 255);
-    width: 970px;
-    height: auto;
-    margin-left: 25px;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between ;
+    display: flex;
+    width: 222px;
+    margin-top: 9px;
+    margin-bottom: 2px;
+}
+.languages-label
+{
+    width: 49px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #767676;
+}
+.languages-percent
+{
+    width: 36px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #767676;
+}
+.Skills
+{
+   
+    font-size: 18px;
+    font-weight: 500;
+    justify-items: left;
+    margin-left: 43px ;
+    margin-right: 43px ;
+}
+.container-label-skills
+{
+    flex-direction: row;
+    justify-content: space-between ;
+    display: flex;
+    width: 222px;
+    text-align: left;
+}
+.skills-label
+{
+    width: 49px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #767676;
+}
+.skills-percent
+{
+    width: 36px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #767676;
+}
+.Extra-Skills
+{
+   
+    font-size: 18px;
+    font-weight: 500;
+    justify-items: left;
+    margin-left: 43px ;
+    margin-right: 43px ;
+}
+.container-icon
+{
+    margin-top: 19px;
+    text-align: left;
+    display: flex;
+    gap: 15px;
+}
+.font-extra-skill
+{
+    color:  #767676;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.downloang
+{
+    width: 220px;
+    height: 40px;
     flex-shrink: 0;
+    background-color: #FFB400;
+    margin: 25px 40px 25px 45px;
+    display: flex;
+    
+}
+.downloang-cv
+{
+    width: auto;
+    height: 19.4px;
+    padding: 10px 40px 10px 20px;
+    display: flex;
+    text-align: center;
+}
+.downloang-icon
+{
+    margin: 12.5px 0px 12.5px 19px;
 }
 /* thanh nav */
 .nav
@@ -94,4 +188,763 @@ body
     height: 1315px;
     margin-left: 15px;
     flex-shrink: 0;
+}
+.icon1
+{
+    width: 30px;
+    height: 30px;
+    margin: 50px 39px 0px 39px;
+}
+.icon2
+{
+    width: 40px;
+    height: 40px;
+    margin: 212px 34px 0px 34px;
+}
+.icon-afterhome
+{
+    width: 40px;
+    height: 40px;
+    margin: 43px 34px 0px 34px;
+}
+/* khung chinh */
+.main
+{
+    width: 970px;
+    height: auto;
+    margin-left: 25px;
+    align-items: center;
+    flex-shrink: 0;
+}
+.main-poforlio
+{
+    width: 970px;
+    height: 467px;
+    background-color: white;
+    position: relative;/* dinh vi main-poforlio la vung trang tri chinh ( vung cha ) */
+    display: flex;
+}
+.main-avatar
+{
+    margin-left: 26.68px;
+    margin-top: 6px;
+} 
+/* tieu de*/
+.main-title
+{
+    width: 500px;
+    height: 118px;
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 123.6%; 
+    margin-top: 93px;
+    margin-left: 60px;  
+    text-transform: capitalize;
+
+}
+.main-note
+{
+    width: 424px;
+    height: 88px;
+    flex-shrink: 0;
+    margin-top: 19px;
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+}
+.main-hereme
+{
+    
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #FFB400;
+  border-radius: 5px;
+  padding: 16px 32px;
+  margin-top: 25px;
+  margin-left: 60px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #2B2B2B;
+
+}
+/* trang tri dau trang*/
+/* khung con boc hinh trang tri*/
+.decorations 
+{
+  position: absolute;/* phu len noi dung cha*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0; /* hien sau lop chinh*/
+}
+/*cai thong so cho  hinh trang tri*/
+.shape 
+{
+  position: absolute;/* du dinh vi tung hinh trong decoration */
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;/* lam mo nhat hinh */
+}
+/* hinh tron */
+.circle
+{
+    border-radius: 50%;/* giup bo tron hinh vuong lai tao ra hinh tron*/
+}
+.orange 
+{
+  border: 2px solid orange;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.orange1 
+{
+  border: 2px solid orange;
+  bottom: 71.04px;
+  left: 557.86px;
+}
+.green 
+{
+  border: 2px solid limegreen;
+  bottom: 29px;
+  left: 88px;
+}
+.green1 
+{
+  border: 2px solid limegreen;
+  top: 52px;
+  left: 520px;
+}
+/* hinh vuong nghieng 45 diop*/
+.square
+{
+  transform: rotate(26.052deg); /* lam cho hinh vuong xoay 26.052 do*/
+}
+.blue 
+{
+  border: 2px solid blue;
+  top: 333px;
+  left: 373.8px;
+}
+.yellow 
+{
+  border: 2px solid gold;
+  top: 69.66px;
+  right: 53.16px;
+}
+/* hinh tam giac*/
+.triangle.red 
+{
+  width: 2px;
+  height: 2px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid red;
+  bottom: 24px;
+  right: 24px;
+}
+/* my services*/
+.container-myservices
+{
+    width: 100%;
+    height: auto;
+    margin-top: 138px;
+    
+}
+.myservices
+{
+    width: 192px;
+    height: 40px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 387px;
+    margin-right: 399px;
+    margin-bottom: 25px;
+}
+.myservices-note
+{
+    width: 438px;
+    height: 68px;
+    margin: 0 auto;  
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(164, 166, 167);
+}
+.menu
+{
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+    display: grid; /* cho phep container duoc chia thanh  nhieu o theo dang luoi */
+    grid-template-columns: repeat(3, 1fr); /* tao 3o tren moi hanh repeat(3,1fr) = 1fr 1fr 1fr */
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 970px;
+    
+}
+.service-box 
+{   
+    position: relative;
+    background-color: white;
+    max-width: 310px;
+    height: 225px;
+    flex-shrink: 0;
+    text-align: center;
+    
+}
+.icon-left
+{
+    position:  absolute;
+    left: 25px;                 /* Sat le trai */
+    top: 3px;                /* Nam giua chieu doc */
+    flex-direction: column;  /* Xep icon theo chieu doc */
+    gap: 20px;               /* Khoang cach giua cac icon */
+    padding: 20px; 
+}
+.icon-game
+{ 
+    margin-top: 13px;
+    width: 15px;
+    height: 15px;
+}
+.order
+{
+    position: absolute;
+    margin-top: 30px ;
+    display: flex;
+    left: 35%;
+}/* price plans*/
+.container-priceplans
+{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+.priceplans
+{
+    width: 174px;
+    height: 40px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 387px;
+    margin-right: 399px;
+    margin-bottom: 25px;
+}
+.priceplans-note
+{
+    width: 438px;
+    height: 68px;
+    margin: 0 auto;  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(164, 166, 167);
+}
+.priceplans-box
+{
+    position: relative;
+    background-color: white;
+    max-width: 310px;
+    height: 609px;
+    flex-shrink: 0;
+    text-align: center;
+}
+.price-p
+{
+    margin: 54px 122px 19px 122px ;
+    font-size: 34px;
+    font-weight: 600;
+}
+.price-span
+{
+    height: 40px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.container-price-span
+{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+.price-note
+{
+    margin-top: 8px;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.price-div
+{
+    height: 24px;
+    display:flex;
+    gap: 15.11px;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-left: 33px;
+}
+.ordernow
+{
+    position: absolute;
+    width: 169px;
+    height: 38px;
+    border-radius: 30px ;
+    bottom: 25px;
+    left: 70px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.mostpopular
+{
+    height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize; 
+    
+}
+/*recommendations*/
+.container-recommendations
+{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+.recommendations
+{
+    width: 174px;
+    height: 40px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 35.5%;
+}
+.recommendations-note
+{
+    width: 438px;
+    height: 68px;
+    margin: 24px auto;  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(164, 166, 167);
+}
+.recommendations-box
+{
+    background-color: white;
+    max-width: 310px;
+    min-height: 323px;
+    flex-shrink: 0;
+   
+}
+.container-icon-recommendations
+{
+    margin-left: 25px;
+   
+}
+.icon-star
+{ 
+    margin-top: 25px;
+    display: inline-flex;
+    gap: 10px;
+}
+.recommendations-title
+{
+    margin-top: 16.63px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.recommendations-text
+{
+    width: 262px;
+    flex-shrink: 0;
+    color:  #767676;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 30px ;
+}
+.user-info
+{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 13px;
+    flex-shrink: 0;
+}
+.user-text
+{
+    margin-top: 18px;
+    gap: 5px;
+}
+/* Education */
+.container-Education
+{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    text-transform: capitalize;
+}
+.Education
+{
+    width: auto;
+    height: 40px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 43%;
+    white-space: nowrap;
+}
+.Education-note
+{
+    width: 438px;
+    height: 68px;
+    margin: 24px auto;  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(164, 166, 167);
+}
+.education {
+  width: 100%;
+  max-width: 970px;
+  height: 632px;
+  padding-top: 51px;
+  padding-left: 37px;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+}
+
+.education-h4 {
+  margin-bottom: 28px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.div-p-span {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.education-p {
+  margin: 0;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.education-p-r
+{
+    width: 536px;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+.left span 
+{
+  background-color: orange;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+/*porfolio*/
+.container-Portfolio
+{
+    width: 100%;
+    height: auto;
+    margin-top: 138px;
+    
+}
+.Portfolio
+{
+    width: 192px;
+    height: 40px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0px 43% 25px ;
+}
+.Portfolio-note
+{
+    width: 438px;
+    height: 68px;
+    margin: 0 auto;  
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(164, 166, 167);
+}
+.portfolio-box
+{
+  background: white;
+  width: 100%;
+  max-width: 310px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.poforlio-span
+{
+    margin-top: 50px ;
+    margin-bottom: 50px;
+    gap: 32px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+
+    
+}
+/*Blog*/
+.container-Blog
+{
+    width: 100%;
+    height: auto;
+    margin-top: 170px;
+}
+.Blog
+{
+    width: 174px;
+    height: 40px;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 46%;
+}
+.Blog-note
+{
+    width: 438px;
+    height: 68px;
+    margin: 24px auto;  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(164, 166, 167);
+}
+.Blog-box
+{
+    background-color: white;
+    max-width: 310px;
+    min-height: 474px;
+    flex-shrink: 0;
+    position: relative;
+}
+.Blog-title
+{
+    margin-top: 25px;
+    margin-left: 25px ;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.Blog-text
+{
+    width: 268px;
+    flex-shrink: 0;
+    color:  #767676;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-left: 25px ;
+    margin-top: 8px;
+}
+.Learnmore
+{
+    position: absolute;
+    width: 169px;
+    height: 38px;
+    border-radius: 30px ;
+    margin-top: 9px;
+    bottom: 5px;
+    left: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: flex;
+    color: #FFB400;
+    align-items: center;
+}
+/* sent message*/
+.form-contact-wrapper
+{
+  gap: 40px;
+  max-width: 970px;
+  margin: 40px auto;
+  
+}
+.form-box
+{
+    margin-top: 50px;
+    background: #ffffff;
+    padding: 30px;
+    width: 570px;
+    height: 665px;
+}
+.form-title
+{
+    font-size: 32px;
+    font-weight: 700;
+}
+.form-input
+{
+  width: 100%;
+  padding: 20px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  background: #f1f1f8;
+  border: none;
+  border-radius: 4px;
+}
+.form-textarea 
+{
+  width: 100%;
+  padding: 20px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  background: #f1f1f8;
+  border: none;
+  border-radius: 4px;
+  min-height: 200px;
+}
+.info-p
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(183, 180, 180);
+}
+.form-btn {
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/**********/
+.contact-container 
+{
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+.contact-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.contact-box 
+{
+    width: 370px;
+    height: 210px;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.contact-icon 
+{
+  width: 40px;
+  height: 40px;
+  background-color: #FFC107;
+  border-radius: 50%;
+  margin: 0 auto 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-content p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 14px;
+  margin-bottom: 14px ;
+}
+
+.contact-content span {
+  font-weight: 600;
+  color: #090909;
+}
+.map
+{
+    width: 970px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.logo
+{
+    width: 970px;
+    height: 140px;
+    margin-top: 70px;
+    justify-content: space-between;
+    display: flex;
+}
+.div-logo
+{
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+}
+/* footer */
+.footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin-top: 70px;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
 }
